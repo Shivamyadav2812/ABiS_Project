@@ -69,7 +69,119 @@
   </nav>
   <!-- Navbar End -->
 
-  
+  <!-- Form Start -->
+  <div class="container py-5 " style="max-width: 800px;">
+    <div class="card shadow-sm rounded-3">
+      <img src="./img/form-bg.jpg" alt="" class="rounded-3">
+        <div class="card-body">
+            <h2 class="card-title text-center mb-2 ">Ready to Join Our Team?</h2>
+            <p class="text-muted text-center mb-4">Please fill in the form to apply for a position with our company.</p>
+            
+            <form class="needs-validation">
+                <div class="row g-3">
+                    <!-- Name Fields -->
+                    <div class="col-md-6">
+                        <label for="firstName" class="form-label fw-bold">First Name</label>
+                        <input type="text" class="form-control rounded-3 rounded-3" id="firstName" placeholder="Enter your first name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="lastName" class="form-label fw-bold">Last Name</label>
+                        <input type="text" class="form-control rounded-3" id="lastName" placeholder="Enter your last name" required>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="col-12">
+                        <label for="email" class="form-label fw-bold">Email Address</label>
+                        <input type="email" class="form-control rounded-3" id="email" placeholder="example@domain.com" required>
+                        <div class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="col-12">
+                        <label for="phone" class="form-label fw-bold">Phone Number</label>
+                        <input type="tel" class="form-control rounded-3" id="phone" placeholder="+91-9876543210" required>
+                        <div class="form-text">Include country code if applicable</div>
+                    </div>
+
+                    <!-- Position -->
+                    <div class="col-12">
+                        <label for="position" class="form-label fw-bold">Position Applied For</label>
+                        <select class="form-select rounded-3" id="position">
+                            <option value="" selected disabled>Select position</option>
+                            <option value="developer">Developer</option>
+                            <option value="designer">Designer</option>
+                            <option value="marketing">Marketing Specialist</option>
+                            <option value="sales">Sales Representative</option>
+                        </select>
+                    </div>
+
+                    <!-- Resume Upload -->
+                    <div class="col-12">
+                        <label for="resume" class="form-label fw-bold">Resume/CV</label>
+                        <input type="file" class="form-control rounded-3" id="resume">
+                        <div class="form-text">Attach your resume/CV in PDF format</div>
+                    </div>
+
+                    <!-- Cover Letter -->
+                    <div class="col-12">
+                        <label for="coverLetter" class="form-label fw-bold">Cover Letter</label>
+                        <textarea class="form-control rounded-3" id="coverLetter" rows="4" placeholder="Please introduce yourself and explain why you are a good fit for the position."></textarea>
+                    </div>
+
+                    <!-- Experience Level -->
+                    <div class="col-12">
+                        <label class="form-label fw-bold">What is your current level of experience?</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="experience" id="entry" value="Entry Level">
+                            <label class="form-check-label" for="entry">Entry Level</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="experience" id="mid" value="Mid Level">
+                            <label class="form-check-label" for="mid">Mid Level</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="experience" id="senior" value="Senior Level">
+                            <label class="form-check-label" for="senior">Senior Level</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="experience" id="other" value="Other">
+                            <label class="form-check-label" for="other">Other (please specify)</label>
+                        </div>
+                        <input type="text" class="form-control rounded-3 mt-2" id="otherExperience" placeholder="Type here">
+                    </div>
+
+                    <!-- Start Date -->
+                    <div class="col-12">
+                        <label for="startDate" class="form-label fw-bold">Earliest Possible Start Date</label>
+                        <input type="date" class="form-control rounded-3" id="startDate">
+                    </div>
+
+                    <!-- Consent -->
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="consent" required>
+                            <label class="form-check-label" for="consent">
+                                I consent to the privacy policy and terms of service.
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn btn-primary px-4 py-2 rounded-3">Submit Application</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Form End -->
+
+
+  <!-- <div class="test" style="background-color: red; margin: 0px 400px;">Hello</div> -->
 
   <!-- Footer Start -->
   <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
@@ -144,7 +256,7 @@
             delivered straight to your inbox
           </p>
           <div class="position-relative mx-auto" style="max-width: 400px">
-            <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email" />
+            <input class="form-control rounded-3 border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email" />
             <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">
               SignUp
             </button>
