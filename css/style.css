@@ -499,3 +499,130 @@
   align-items: center;
   font-size: 25px;
 } 
+
+/* For Internship Category */
+.main .row{
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.main{
+  width: 100%;
+  background-color: #DCE9E2; 
+}
+
+.healthcare, .nav-link, .selectDoctor, .customerReview{
+  color: #01adef;
+  font-weight: 700;
+}
+
+.nav-link:hover{
+  color: #01adef;
+}
+
+.welcome{
+  color: #01adef;
+  font-weight: 700;
+}
+
+.lead{
+  color: #384633;
+}
+
+.doctor-card {
+  border: 1px solid #01adef;
+  border-radius: 5px;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 20px;
+  transition: transform 0.2s;
+}
+.doctor-card:hover {
+  transform: scale(1.05);
+}
+.doctor-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: fit;
+  border-radius: 5px;
+}
+.doctor-card h5 {
+  margin-top: 10px;
+}
+
+section .container{
+  width: 90vw;
+}
+
+.footer{
+  margin: 0;
+  padding: 0;
+}
+
+.footer-container{
+  background-color: #DCE9E2;
+  padding: 0 30px;
+}
+
+.copyright{
+  margin-left: 120px;
+}
+
+.addFocus:focus{
+  border-color: #01adef;
+  box-shadow: inset 0 1px 1px rgba(0, 133, 111, 0.075), 0 0 8px rgba(0, 133, 111, 0.6);
+}
+
+
+/* .section-header h3 {
+  font-size: 36px;
+  color: #283d50;
+  text-align: center;
+  font-weight: 500;
+  position: relative;
+}
+
+.section-header p {
+  text-align: center;
+  margin: auto;
+  font-size: 15px;
+  padding-bottom: 60px;
+  color: #556877;
+  width: 50%;
+} */
+
+#clients {
+  padding: 60px 0;
+  
+}
+#clients .clients-wrap {
+  border-top: 1px solid #d6eaff;
+  border-left: 1px solid #d6eaff;
+  margin-bottom: 30px;
+}
+
+#clients .client-logo {
+  padding: 64px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-right: 1px solid #d6eaff;
+  border-bottom: 1px solid #d6eaff;
+  overflow: hidden;
+  background: #fff;
+  height: 160px;
+}
+
+#clients img {
+  transition: all 0.4s ease-in-out;
+}
+
