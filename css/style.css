@@ -282,7 +282,7 @@ form.search-box .search-form button {
   height: 50px;
   border: none;
   border-radius: 6px;
-  background-color: #0dcaf0;
+  background-color: #01adef;
   color: #fff;
   font-size: 16px;
   font-weight: bold;
@@ -291,7 +291,7 @@ form.search-box .search-form button {
 }
 
 form.search-box .search-form button:hover {
-  background-color: #0dcaf0;
+  background-color: #2bc5d4;
 }
 
 @media (max-width: 768px) {
