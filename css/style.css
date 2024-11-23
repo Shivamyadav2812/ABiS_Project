@@ -378,7 +378,7 @@ form.search-box .search-form button:hover {
 
 .items-link a {
   color: #ffffff;
-  background-color: #0dcaf0;
+  background-color: #01adef;
   padding: 8px 15px;
   border-radius: 4px;
   text-decoration: none;
@@ -387,7 +387,7 @@ form.search-box .search-form button:hover {
 }
 
 .items-link a:hover {
-  background-color: #4565a0;
+  background-color: #2bc5d4;
 }
 
 .items-link span {
