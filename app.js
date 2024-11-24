@@ -18,7 +18,7 @@ const db = mysql.createConnection({
     user: 'root', // Use your MySQL username
     password: 'root123', // Use your MySQL password
     database: 'abis'
-});
+}); 
 
 db.connect((err) => { 
     if (err) throw err;
@@ -34,6 +34,7 @@ app.get('/:page', (req, res) => {
     const page = req.params.page;
     const validPages = [
         'about',
+        'index',
         'careers',
         'contact',
         'form',
