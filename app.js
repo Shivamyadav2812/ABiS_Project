@@ -29,7 +29,7 @@ db.connect((err) => {
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'index.html'));
 });
-
+    
 app.get('/:page', (req, res) => {
     const page = req.params.page;
     const validPages = [
