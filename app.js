@@ -3,9 +3,9 @@ const bodyParser = require('body-parser');
 const mysql = require('mysql2');
 const path = require('path');
 
-const app = express();
+const app = express(); 
 const PORT = 8080;
-
+       
 // Middleware 
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -14,7 +14,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Database Connection
 const db = mysql.createConnection({
-    host: 'localhost',
+    host: 'localhost',   
     user: 'root', // Use your MySQL username
     password: 'root123', // Use your MySQL password
     database: 'abis'
