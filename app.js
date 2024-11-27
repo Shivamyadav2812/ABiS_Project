@@ -51,6 +51,7 @@ app.get('/:page', (req, res) => {
     }
 });
 
+//for applications
 app.post('/submit', (req, res) => {
     const {
         f_name,
@@ -73,11 +74,57 @@ app.post('/submit', (req, res) => {
     db.query(sql, [f_name, l_name, email_id, mobile_no, cover_letter, experience, start_date, terms], (err) => {
         if (err) {
             console.error(err);
-            return res.status(500).sendFile(path.join(__dirname,'views', 'fail.html'));
+            // Send response with failure alert
+            return res.send(`
+                <script>
+                    alert('Submission failed. Please try again.');
+                    window.location.href = '/form'; // Replace with the actual form page route
+                </script>
+            `);
         }
-        res.sendFile(path.join(__dirname, 'views', 'success.html'));
+        // Send response with success alert
+        res.send(`
+            <script>
+                alert('Your application has been successfully submitted!');
+                window.location.href = '/careers'; // Replace with the actual form page route
+            </script>
+        `);
     });
 });
+
+//for Contack Message
+// Ensure `path` is imported for file operations
+
+app.post('/submitC', (req, res) => {
+    const { name, email, subject, message } = req.body;
+
+    const sql = `
+        INSERT INTO contact_form (name, email, subject, message)
+        VALUES (?, ?, ?, ?)
+    `;
+
+    db.query(sql, [name, email, subject, message], (err) => {
+        if (err) {
+            console.error(err);
+            // Send an HTML response with an alert for failure
+            return res.send(`
+                <script>
+                    alert('Submission failed. Please try again.');
+                    window.location.href = '/contact'; // Replace with the actual form page route
+                </script>
+            `);
+        }
+        // Send an HTML response with an alert for success
+        res.send(`
+            <script>
+                alert('Your message has been successfully sent!');
+                window.location.href = '/contact'; // Replace with the actual form page route
+            </script>
+        `);
+    });
+});
+
+
 
 // Start Server 
 app.listen(PORT, () => {
