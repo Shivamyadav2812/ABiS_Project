@@ -576,6 +576,10 @@ form.search-box .search-form button:hover {
 }
 
 /*** Footer ***/
+#footerDiv{
+  margin-right: 0 !important;
+}
+
 .footer .btn.btn-social {
   margin-right: 5px;
   width: 35px;
