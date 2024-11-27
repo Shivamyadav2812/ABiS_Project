@@ -77,7 +77,7 @@ app.post('/submit', (req, res) => {
             // Send response with failure alert
             return res.send(`
                 <script>
-                    alert('Submission failed. Please try again.');
+                    alert('Submission failed or Already Applied. Please try again!!!');
                     window.location.href = '/form'; // Replace with the actual form page route
                 </script>
             `);
