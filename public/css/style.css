@@ -576,7 +576,7 @@ form.search-box .search-form button:hover {
 }
 
 /*** Footer ***/
-#footerDiv{
+#footerDiv {
   margin-right: 0 !important;
 }
 
@@ -672,7 +672,11 @@ p {
   flex-wrap: wrap;
   height: 100vh;
 }
-
+h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: var(--primary);
+}
 .polaroid {
   margin: 30px;
   width: 400px;
